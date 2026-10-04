@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simulasikan lose streak di Mobile Legends dan lihat seberapa turun winrate kamu. Isi total match, WR, dan jumlah kekalahan beruntun."
+    />
+    <meta
+      name="keywords"
+      content="simulasi lose streak ml, hitung wr turun, penghitung lose streak, dampak lose streak winrate, kalkulator wr ml"
+    />
+    <meta
+      property="og:title"
+      content="Simulasi Lose Streak Mobile Legends - Berapa WR Turun?"
+    />
+    <meta
+      property="og:description"
+      content="Lihat seberapa turun winrate kamu kalau kalah beruntun di Mobile Legends."
+    />
+    <title>Simulasi Lose Streak Mobile Legends - Berapa WR Turun?</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%230a0c10%27 stroke=%27%236ee7f0%27/%3E%3Cpath d=%27M16 8l8 8-8 8-8-8z%27 fill=%27%23e6cf8a%27/%3E%3C/svg%3E"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/gaya.css" />
+  </head>
+  <body>
+    <div id="welcomeMsg" class="banner">
+      <p data-msg="Gema kekalahan beruntun. Ukur dampaknya ke WR-mu.">
+        Gema kekalahan beruntun. Ukur dampaknya ke WR-mu.
+      </p>
+    </div>
+    <main class="wrap">
+      <header class="head">
+        <div class="emblem" aria-hidden="true"><span>WR</span></div>
+        <h1>Simulasi Lose Streak</h1>
+        <p>Lihat seberapa jauh WR-mu turun jika kalah beruntun.</p>
+      </header>
+      <nav class="tabs" aria-label="Menu">
+        <a href="index.html">Target WR</a
+        ><a href="rekap-win-lose.html">Win dan Lose</a
+        ><a href="simulasi-lose-streak.html" aria-current="page">Lose Streak</a>
+      </nav>
+      <section class="card">
+        <form onsubmit="return false;">
+          <div class="field">
+            <label for="tMatch">Total match Hero</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 434"
+              autocomplete="off"
+              id="tMatch"
+            />
+          </div>
+          <div class="field">
+            <label for="tWr">WR Hero (%)</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 72.3"
+              step="any"
+              autocomplete="off"
+              id="tWr"
+            />
+          </div>
+          <div class="field">
+            <label for="lsReq">Lose streak yang dibayangkan</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 10"
+              autocomplete="off"
+              id="lsReq"
+            />
+          </div>
+          <button class="btn" type="button" id="hasil">Simulasikan</button>
+        </form>
+        <div
+          id="resultText"
+          class="result"
+          role="status"
+          aria-live="polite"
+        ></div>
+      </section>
+      <footer class="foot"><p>Copyright &copy; 2026 Kleireez</p></footer>
+    </main>
+    <script src="assets/js/inti.js"></script>
+    <script src="assets/js/simulasi.js"></script>
+  </body>
+</html>

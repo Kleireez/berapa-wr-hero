@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hitung berapa match yang harus kamu menangkan untuk mencapai target winrate Mobile Legends. Gratis, cepat, tinggal isi total match dan WR."
+    />
+    <meta
+      name="keywords"
+      content="penghitung wr, kalkulator winrate, hitung wr mobile legends, cara menghitung wr ml, target winrate, berapa match naik wr, push rank ml"
+    />
+    <meta
+      property="og:title"
+      content="Penghitung WR Mobile Legends - Hitung Target Winrate Kamu"
+    />
+    <meta
+      property="og:description"
+      content="Hitung berapa match yang harus kamu menangkan untuk mencapai target winrate Mobile Legends. Gratis dan cepat."
+    />
+    <title>Penghitung WR Mobile Legends - Hitung Target Winrate Kamu</title>
+    <link 
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%230a0c10%27 stroke=%27%236ee7f0%27/%3E%3Cpath d=%27M16 8l8 8-8 8-8-8z%27 fill=%27%23e6cf8a%27/%3E%3C/svg%3E"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/gaya.css" />
+  </head>
+  <body>
+    <div id="welcomeMsg" class="banner">
+      <p
+        data-msg="Siap push rank? Hitung dulu berapa match menuju target WR-mu."
+      >
+        Siap push rank? Hitung dulu berapa match menuju target WR-mu.
+      </p>
+    </div>
+    <main class="wrap">
+      <header class="head">
+        <div class="emblem" aria-hidden="true"><span>WR</span></div>
+        <h1>Penghitung WR Mobile Legends</h1>
+        <p>
+          Berapa match yang harus kamu menangkan untuk mencapai target
+          winrate-mu?
+        </p>
+      </header>
+      <nav class="tabs" aria-label="Menu">
+        <a href="index.html" aria-current="page">Target WR</a
+        ><a href="rekap-win-lose.html">Win dan Lose</a
+        ><a href="simulasi-lose-streak.html">Lose Streak</a>
+      </nav>
+      <section class="card">
+        <form onsubmit="return false;">
+          <div class="field">
+            <label for="tMatch">Total match Hero</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 434"
+              autocomplete="off"
+              id="tMatch"
+            />
+          </div>
+          <div class="field">
+            <label for="tWr">WR Hero (%)</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 72.3"
+              step="any"
+              autocomplete="off"
+              id="tWr"
+            />
+          </div>
+          <div class="field">
+            <label for="wrReq">Target WR (%)</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 80"
+              step="any"
+              autocomplete="off"
+              id="wrReq"
+            />
+          </div>
+          <button class="btn" type="button" id="hasil">Hitung</button>
+        </form>
+        <div
+          id="resultText"
+          class="result"
+          role="status"
+          aria-live="polite"
+        ></div>
+      </section>
+      <footer class="foot"><p>Copyright &copy; 2026 Kleireez</p></footer>
+    </main>
+    <script src="assets/js/inti.js"></script>
+    <script src="assets/js/target-wr.js"></script>
+  </body>
+</html>

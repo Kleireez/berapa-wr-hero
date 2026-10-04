@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Ketahui total win dan lose kamu di Mobile Legends hanya dengan memasukkan total match dan persentase winrate. Gratis dan tanpa login."
+    />
+    <meta
+      name="keywords"
+      content="cek total win lose ml, hitung win lose dari wr, jumlah win mobile legends, kalkulator win lose, cara lihat total win ml"
+    />
+    <meta
+      property="og:title"
+      content="Cek Total Win dan Lose Mobile Legends dari WR"
+    />
+    <meta
+      property="og:description"
+      content="Masukkan total match dan WR, langsung ketahui jumlah win dan lose kamu di Mobile Legends."
+    />
+    <title>Cek Total Win dan Lose Mobile Legends dari WR</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%230a0c10%27 stroke=%27%236ee7f0%27/%3E%3Cpath d=%27M16 8l8 8-8 8-8-8z%27 fill=%27%23e6cf8a%27/%3E%3C/svg%3E"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/gaya.css" />
+  </head>
+  <body>
+    <div id="welcomeMsg" class="banner">
+      <p data-msg="Telusuri jejak setiap pertempuran: total win dan lose-mu.">
+        Telusuri jejak setiap pertempuran: total win dan lose-mu.
+      </p>
+    </div>
+    <main class="wrap">
+      <header class="head">
+        <div class="emblem" aria-hidden="true"><span>WR</span></div>
+        <h1>Total Win dan Lose</h1>
+        <p>Ketahui jumlah win dan lose dari total match dan WR-mu.</p>
+      </header>
+      <nav class="tabs" aria-label="Menu">
+        <a href="index.html">Target WR</a
+        ><a href="rekap-win-lose.html" aria-current="page">Win dan Lose</a
+        ><a href="simulasi-lose-streak.html">Lose Streak</a>
+      </nav>
+      <section class="card">
+        <form onsubmit="return false;">
+          <div class="field">
+            <label for="tMatch">Total match Hero</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 434"
+              autocomplete="off"
+              id="tMatch"
+            />
+          </div>
+          <div class="field">
+            <label for="tWr">WR Hero (%)</label
+            ><input
+              type="number"
+              inputmode="decimal"
+              placeholder="Cth: 72.3"
+              step="any"
+              autocomplete="off"
+              id="tWr"
+            />
+          </div>
+          <button class="btn" type="button" id="hasil">Hitung</button>
+        </form>
+        <div
+          id="resultText"
+          class="result"
+          role="status"
+          aria-live="polite"
+        ></div>
+      </section>
+      <footer class="foot"><p>Copyright &copy; 2026 Kleireez</p></footer>
+    </main>
+    <script src="assets/js/inti.js"></script>
+    <script src="assets/js/rekap.js"></script>
+  </body>
+</html>
